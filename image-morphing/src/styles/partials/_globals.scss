@@ -31,14 +31,20 @@
     position: relative;
     height: 100%;
     border: 1px solid salmon;
-    min-height: 250px;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
     h2 {
       color: #fff;
       @include vertical-align();
+      position: absolute;
+      display: none;
+    }
+    canvas {
+      position: relative;
+      width: 100%;
     }
   }
   &--1 {
